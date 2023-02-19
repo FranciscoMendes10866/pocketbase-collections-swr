@@ -32,7 +32,7 @@ export const List = () => {
 
       <ul>
         {data?.map((todo) => (
-          <li key={todo.id} onClick={() => trigger(todo.id)}>
+          <li key={todo.id} onClick={async () => await trigger(todo.id)}>
             {todo.title}
           </li>
         ))}

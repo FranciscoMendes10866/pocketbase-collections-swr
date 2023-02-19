@@ -25,7 +25,7 @@ export const AddNote = () => {
 
   const onSubmitHandler = useCallback(async (evt) => {
     evt?.preventDefault();
-    trigger({ title: todoRef.current.value, user: user.id });
+    await trigger({ title: todoRef.current.value, user: user.id });
     todoRef.current.value = "";
   }, []);
 
