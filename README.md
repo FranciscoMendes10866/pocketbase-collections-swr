@@ -1,0 +1,1 @@
+# pocketbase-collections-swr
